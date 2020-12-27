@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InviteFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/invite_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Invite friends"
+        android:textColor="@color/black1"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/invite_description"
+        android:layout_below="@+id/invite_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/invite_description"
+        android:textColor="@color/black1"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/invite_image"
+        android:layout_below="@+id/invite_description"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/invite_back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/invite_via"
+        android:layout_below="@+id/invite_image"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Invite via"
+        android:textColor="@color/black1"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/invite_via"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/image_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fb"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/image_whatsapp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/whatsapp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image_fb"/>
+
+        <ImageView
+            android:id="@+id/image_twitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image_whatsapp" />
+
+        <ImageView
+            android:id="@+id/image_telegram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/telegram"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image_twitter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

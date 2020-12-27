@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ContactFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/contact_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/contact_head"
+        android:textStyle="bold"
+        android:textColor="@color/black1"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/contact_desc"
+        android:layout_below="@+id/contact_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_desc"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black1"
+        android:background="#66C1B6B6"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_contact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/contact_desc"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_24"
+            android:text="Email"
+            android:drawableTint="@color/black1"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cs@guvi.in"
+            android:drawableRight="@drawable/ic_arrow_forward_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black1"
+            android:textColor="@color/black1"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contact_info"
+        android:layout_below="@+id/linear_layout_contact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/contact_info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black1"
+        android:background="#66C1B6B6"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_contact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/contact_info"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_chat_24"
+            android:text="Chat with us"
+            android:drawableTint="@color/black1"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(9AM - 9PM)"
+            android:drawableRight="@drawable/ic_arrow_forward_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black1"
+            android:textColor="@color/black1"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_contact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_layout_contact2"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/follow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_share_24"
+            android:text="Follow us"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black1"
+            android:textColor="@color/black1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fb"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/instagram"
+                android:layout_marginLeft="25dp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/twitter"
+                android:layout_marginLeft="25dp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/telegram"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/visit_us"
+        android:layout_below="@+id/linear_layout_contact3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Visit us"
+        android:textStyle="bold"
+        android:textColor="@color/black1"
+        android:textSize="18dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:layout_below="@+id/visit_us"
+        android:id="@+id/mapView"
+        android:layout_width="400dp"
+        android:layout_height="370dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+</RelativeLayout>
